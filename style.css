@@ -11,6 +11,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .body{
     color: var(--Transparentwhiteparagraphs);
@@ -30,6 +31,7 @@
     font-family: "Lexend Deca", sans-serif;
 }
 .container .cards{
+    box-sizing: border-boxssss;
     padding: 50px 70px;
     height: 40vh;
 }
@@ -114,7 +116,7 @@ footer{
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (min-width:768px) {
+@media (min-width:992px) {
     *{
         margin: 0;
         padding: 0;
@@ -129,31 +131,42 @@ footer{
         align-self: center;
         justify-self: center;
         flex-direction: row;
-        max-width: 80vw;
-        margin: 1vh 9vw;
+        max-width: 900px;
+        margin: auto;
+        padding: 0px;
     }
     .sedan{
         border-radius: 10px 0 0 10px;
-        margin-left: 10vw;
+    }
+    .suv button{
+        margin-top: 70px;
     }
     .luxury{
-        margin-right: 10vw;
         border-radius: 0 10px 10px 0;
     }
     .container .cards{
-        height: 50vh;
-        padding: 50px 55px;
+        height: 500px;
+        padding: 40px 30px;
     }
     .btn{
-        margin-top: 25%;
+        margin-top: 45px;
         padding: 15px 40px;
     }
     p{
-        padding: 20px 0 20px 0;
-        line-height: 2em;
+        letter-spacing: 0.1em;
+        word-spacing: -0.1em;
+        padding: 5px 0 0s 0;
+        line-height: 1.6;
     }
     h1{
+        padding: 30px 0 30px 0;
         font-size: 45px;
         word-spacing: 1em;
     }
-}    
+
+@media (min-width:1280px){
+    .container{
+        width: 1100px;
+    }
+}
+}
